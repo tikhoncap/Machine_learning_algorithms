@@ -76,15 +76,15 @@ class LinearRegression2:
         for epoch in range(self.epochs):
         
             # Вычисляем предсказанное значение
-            y_hat = np.dot(X, self.weights) + self.bias
+            y_pred = np.dot(X, self.weights) + self.bias
      
             # Вычисляем функцию потерь
-            loss = np.mean((y_hat - y)**2)
+            loss = np.mean((y_pred - y)**2)
             losses.append(loss)
     
             # Вычисляем производные параметров(веса и смещение) 
-            dw = (1/m)*np.dot(X.T, (y_hat - y))
-            db = (1/m)*np.sum((y_hat - y))
+            dw = (1/m)*np.dot(X.T, (y_pred - y))
+            db = (1/m)*np.sum((y_pred - y))
             
             #Обновляем параметры
             self.weights -= self.lr*dw
