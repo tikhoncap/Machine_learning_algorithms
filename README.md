@@ -1,2 +1,2 @@
-# Machine_Learning_algorithms
-ML algorithms in Python from scratch
+# Алгоритмы в машинном обучении
+В этом репозитории реализованы базовые алгоритмы машинного обучения на языке Python. Создано в учебных целях.
